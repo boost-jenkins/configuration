@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.twitter.TwitterPublisher_-DescriptorImpl>
+  <helpRedirect/>
+  <token></token>
+  <tokenSecret></tokenSecret>
+  <hudsonUrl>http://jenkins.boost.org/</hudsonUrl>
+  <onlyOnFailureOrRecovery>false</onlyOnFailureOrRecovery>
+  <includeUrl>false</includeUrl>
+</hudson.plugins.twitter.TwitterPublisher_-DescriptorImpl>
