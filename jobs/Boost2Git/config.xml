@@ -66,7 +66,7 @@
       <buildType>Release</buildType>
       <otherBuildType></otherBuildType>
       <generator>Unix Makefiles</generator>
-      <makeCommand>make -j4</makeCommand>
+      <makeCommand>make -j4 -k</makeCommand>
       <installCommand>make install</installCommand>
       <preloadScript></preloadScript>
       <cmakeArgs>-DBOOST_SVN:PATH=&quot;/home/svnsync/svn/boost&quot; -DRAMDISK:PATH=&quot;/mnt/ramdisk&quot; -DCMAKE_C_COMPILER=/usr/local/bin/clang -DCMAKE_CXX_COMPILER=/usr/local/bin/clang++</cmakeArgs>
@@ -77,11 +77,6 @@
     </hudson.plugins.cmake.CmakeBuilder>
   </builders>
   <publishers>
-    <hudson.tasks.Mailer plugin="mailer@1.4">
-      <recipients>purplekarrot@gmail.com</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
     <com.chikli.hudson.plugin.naginator.NaginatorPublisher plugin="naginator@1.8">
       <regexpForRerun>ssh_exchange_identification: Connection closed by remote host</regexpForRerun>
       <rerunIfUnstable>false</rerunIfUnstable>
