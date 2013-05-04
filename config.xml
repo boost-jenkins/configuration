@@ -57,12 +57,13 @@
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
-      <jobNames class="tree-set">
+      <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
       </jobNames>
       <jobFilters/>
       <columns/>
       <includeRegex>.*</includeRegex>
+      <recurse>false</recurse>
     </hudson.plugins.iphoneview.IPhoneView>
   </views>
   <primaryView>All</primaryView>
