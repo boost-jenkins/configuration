@@ -80,7 +80,7 @@
     <hudson.tasks.Mailer plugin="mailer@1.4">
       <recipients>dave@boostpro.com daniel@pfeifer-mail.de</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>true</sendToIndividuals>
+      <sendToIndividuals>false</sendToIndividuals>
     </hudson.tasks.Mailer>
     <com.chikli.hudson.plugin.naginator.NaginatorPublisher plugin="naginator@1.8">
       <regexpForRerun>ssh_exchange_identification: Connection closed by remote host</regexpForRerun>
