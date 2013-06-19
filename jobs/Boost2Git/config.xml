@@ -69,7 +69,7 @@
       <makeCommand>make -j8</makeCommand>
       <installCommand>make install</installCommand>
       <preloadScript></preloadScript>
-      <cmakeArgs>-DBOOST_SVN:PATH=&quot;/home/svnsync/svn/boost&quot; -DRAMDISK:PATH=&quot;/mnt/ramdisk&quot; -DCMAKE_C_COMPILER=/usr/local/bin/clang -DCMAKE_CXX_COMPILER=/usr/local/bin/clang++</cmakeArgs>
+      <cmakeArgs>-DBOOST_SVN:PATH=&quot;/home/svnsync/svn/boost&quot; -DRAMDISK:PATH=&quot;/mnt/ramdisk&quot;</cmakeArgs>
       <projectCmakePath></projectCmakePath>
       <cleanBuild>false</cleanBuild>
       <cleanInstallDir>false</cleanInstallDir>
