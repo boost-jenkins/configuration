@@ -69,7 +69,7 @@
       <makeCommand>make -j8</makeCommand>
       <installCommand>make install</installCommand>
       <preloadScript></preloadScript>
-      <cmakeArgs>-DBOOST_ROOT:PATH=&quot;/var/lib/boost-gcc4.8&quot; -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DBOOST_SVN:PATH=&quot;/home/svnsync/svn/boost&quot; -DRAMDISK:PATH=&quot;/mnt/ramdisk&quot;</cmakeArgs>
+      <cmakeArgs>-DBOOST_ROOT:PATH=&quot;/var/lib/boost-gcc4.8&quot; -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DBOOST_SVN:PATH=&quot;/home/svnsync/svn/boost&quot; -DRAMDISK:PATH=&quot;/mnt/ramdisk&quot;</cmakeArgs>
       <projectCmakePath></projectCmakePath>
       <cleanBuild>false</cleanBuild>
       <cleanInstallDir>false</cleanInstallDir>
