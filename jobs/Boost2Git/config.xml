@@ -7,7 +7,7 @@
     <com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty plugin="build-failure-analyzer@1.5.0">
       <doNotScan>false</doNotScan>
     </com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.6">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.7">
       <projectUrl>https://github.com/ryppl/Boost2Git/</projectUrl>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
   </properties>
@@ -21,6 +21,9 @@
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>master</name>
+      </hudson.plugins.git.BranchSpec>
       <hudson.plugins.git.BranchSpec>
         <name>**</name>
       </hudson.plugins.git.BranchSpec>
@@ -52,8 +55,8 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers class="vector">
-    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.6">
+  <triggers>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.7">
       <spec></spec>
     </com.cloudbees.jenkins.GitHubPushTrigger>
   </triggers>
@@ -77,7 +80,7 @@
     </hudson.plugins.cmake.CmakeBuilder>
   </builders>
   <publishers>
-    <hudson.tasks.Mailer plugin="mailer@1.4">
+    <hudson.tasks.Mailer plugin="mailer@1.5">
       <recipients>dave@boostpro.com daniel@pfeifer-mail.de</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>false</sendToIndividuals>
